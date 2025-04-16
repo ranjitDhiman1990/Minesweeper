@@ -34,6 +34,9 @@ kotlin {
         commonMain.dependencies {
             implementation(projects.ui.core)
             implementation(projects.domain.settings)
+            implementation(libs.koin.core)
+            implementation(libs.bundles.koin.compose)
+            implementation(libs.kotlinx.serialization)
         }
     }
 }
